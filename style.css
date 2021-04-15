@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  background: #181818;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  background: #202020;
+}
+nav > div {
+  display: flex;
+  align-items: center;
+}
+
+.start div, .start img {
+  margin-left: 24px;
+}
+
+.search input {
+  width: 575px;
+  height: 32px;
+  padding: 5px 10px;
+  background: #121212;
+  border: 1px solid #303030;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.88);
+}
+.search button {
+  width: 65px;
+  height: 32px;
+  font-size: 18px;
+  background: #303030;
+  color: #AAA;
+  border: none;
+}
+.search .mic {
+  margin-left: 12px;
+}
+
+.end div {
+  margin-right: 24px;
+}
+
+.menu {
+  width: 24px;
+  height: 24px;
+}
+
+.logo {
+  width: 80px;
+  height: 24px;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+}
+.container .video-column {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+.container .rec-column {
+  display: flex;
+  flex-direction: column;
+  width: 402px;
+  padding-top: 24px;
+}
+
+.video {
+  width: 790px;
+  height: 444px;
+}
+
+.video-description {
+  margin-top: 24px;
+}
+
+.video-info .tags {
+  font-size: 12px;
+  color: #3EA2F8;
+}
+.video-info .title {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.info-bar {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 40px;
+  font-size: 14px;
+  border-bottom: 1px solid #303030;
+  padding-bottom: 8px;
+}
+.info-bar div {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin-right: 14px;
+  font-weight: 500;
+  color: #AAA;
+}
+.info-bar div .material-icons {
+  margin: 6px;
+}
+.info-bar div:last-child {
+  margin-right: 0;
+}
+.info-bar .views {
+  margin-right: auto;
+  font-weight: 400;
+}
+
+.likes {
+  position: relative;
+}
+.likes .sentiment {
+  width: 140px;
+  position: absolute;
+  border-bottom: 2px solid #AAA;
+  bottom: 0;
+}
+
+.channel-bar {
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+}
+.channel-bar .channel-info {
+  margin-right: auto;
+  margin-left: 15px;
+}
+.channel-bar .channel-info h2 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.channel-bar .channel-info div {
+  font-size: 13px;
+  color: #AAA;
+}
+.channel-bar img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+.channel-bar button {
+  width: 105px;
+  height: 36px;
+  margin-right: 5px;
+  padding: 10px 16px;
+  background: #C00;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 14px;
+  padding: 15px 0 0 63px;
+  border-bottom: 1px solid #303030;
+}
+.description .timestamp {
+  color: #3EA2F8;
+}
+.description button {
+  margin: 30px 0 20px 0;
+  background: transparent;
+  border: none;
+  color: #AAA;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.comments-info {
+  display: flex;
+  margin: 24px 0;
+}
+.comments-info div {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}
+.comments-info .comments-number {
+  font-size: 16px;
+}
+.comments-info .sort-by {
+  font-size: 14px;
+  font-weight: 500;
+  color: #AAA;
+}
+.comments-info .sort-by .material-icons {
+  margin-right: 5px;
+}
+
+.comment-card {
+  display: flex;
+}
+.comment-card img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.comment {
+  margin-left: 15px;
+}
+.comment > div {
+  margin: 10px 0;
+}
+.comment > div:first-child {
+  margin: 0;
+}
+.comment .user {
+  font-size: 13px;
+  font-weight: 500;
+}
+.comment .user span {
+  font-weight: 400;
+  color: #AAA;
+}
+.comment .comment-text {
+  font-size: 14px;
+}
+.comment .likes {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #AAA;
+}
+.comment .likes > span {
+  font-weight: 500;
+  margin-right: 15px;
+}
+.comment .likes .material-icons {
+  font-size: 13px;
+}
+.comment .replies {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #3EA2F8;
+  position: relative;
+  left: -7px;
+}
+
+.rec-card {
+  display: flex;
+  margin-top: 8px;
+}
+.rec-card:first-child {
+  margin: 0;
+}
+.rec-card img {
+  width: 168px;
+  height: 94px;
+  margin-right: 8px;
+}
+.rec-card div .title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  margin-bottom: 2px;
+}
+.rec-card div .info {
+  font-size: 13px;
+  color: #AAA;
+  line-height: 18px;
+}
